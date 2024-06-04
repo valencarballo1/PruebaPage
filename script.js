@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var cards = document.querySelectorAll('.animated-card');
 
     function isInViewport(element) {
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function animateCards() {
-        cards.forEach(function(card) {
+        cards.forEach(function (card) {
             if (isInViewport(card)) {
                 card.classList.add('card-in-view');
             }
@@ -28,21 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 $(document).ready(function () {
-    // Manejar clics en los enlaces
     $('a.nav-link').on('click', function (event) {
-        // Asegurarse de que this.hash tenga un valor antes de anular el comportamiento predeterminado
         if (this.hash !== "") {
-            // Prevenir el comportamiento de clic predeterminado
             event.preventDefault();
-
-            // Guardar el hash
             var hash = this.hash;
-
-            // Usar jQuery animate para hacer un desplazamiento suave
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
             }, 800, function () {
-                // Agregar el hash (#) a la URL cuando haya terminado de desplazarse
                 window.location.hash = hash;
             });
         }
@@ -50,10 +42,10 @@ $(document).ready(function () {
 });
 
 let swiper = new Swiper(".mySwiper", {
-    slidesPerView:1,
+    slidesPerView: 1,
     centeredSlides: true,
-    loop:true,
-    spaceBetween:25,
+    loop: true,
+    spaceBetween: 25,
     grabCursor: true,
     navigation: {
         nextEl: '.swiper-button-next',
@@ -80,9 +72,25 @@ swiperSlides.forEach((slide, index) => {
         // Actualizar el contenido del modal con la información
         document.getElementById('modalTitle').innerText = title;
         document.getElementById('modalImage').src = imageSrc;
-        document.getElementById('modalDescription').innerText = 
-        'Contratado mediante el Gobierno de la Ciudad como controladora y por el Comitente “Los amigos de la calle Florida”. Puesta a punto de la fachada. Restauración y albañilería.';
+        document.getElementById('modalDescription').innerText =
+            'Contratado mediante el Gobierno de la Ciudad como controladora y por el Comitente “Los amigos de la calle Florida”. Puesta a punto de la fachada. Restauración y albañilería.';
 
         $('#myModal').modal('show');
     });
 });
+
+// const btnExpandText = document.getElementById("btnExpandText");
+// function expandText() {
+//     const additionalText = document.getElementById("additionalText");
+//     if (additionalText.style.display === "none") {
+//         additionalText.style.display = "inline";
+//         btnExpandText.style.display = "none"; // "display" en lugar de "add.display"
+//     } else {
+//         additionalText.style.display = "none";
+//     }
+// }
+/*
+<button class="btn btn-primary" id="btnExpandText" onclick="expandText()">Ver más</button>
+                                <span id="additionalText" style="display: none;">
+                                    
+                                </span>*/
