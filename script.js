@@ -55,42 +55,20 @@ let swiper = new Swiper(".mySwiper", {
         991: {
             slidesPerView: 3
         }
+    },
+    autoplay: {
+        delay: 3000, // Cambia de slide cada 3 segundos
+      },
+});
+
+const btnExpandText = document.getElementById("btnExpandText");
+function expandText() {
+    const additionalText = document.getElementById("additionalText");
+    if (additionalText.style.display === "none") {
+        additionalText.style.display = "inline";
+        btnExpandText.style.display = "none";
+    } else {
+        additionalText.style.display = "none";
     }
-});
+}
 
-
-// Obtener todos los elementos swiper-slide
-let swiperSlides = document.querySelectorAll('.swiper-slide');
-
-// Agregar evento de clic a cada swiper-slide
-swiperSlides.forEach((slide, index) => {
-    slide.addEventListener('click', () => {
-        // Obtener información correspondiente a la imagen clicada
-        let imageSrc = slide.querySelector('img').src;
-        let title = slide.querySelector('h3').innerText;
-
-        // Actualizar el contenido del modal con la información
-        document.getElementById('modalTitle').innerText = title;
-        document.getElementById('modalImage').src = imageSrc;
-        document.getElementById('modalDescription').innerText =
-            'Contratado mediante el Gobierno de la Ciudad como controladora y por el Comitente “Los amigos de la calle Florida”. Puesta a punto de la fachada. Restauración y albañilería.';
-
-        $('#myModal').modal('show');
-    });
-});
-
-// const btnExpandText = document.getElementById("btnExpandText");
-// function expandText() {
-//     const additionalText = document.getElementById("additionalText");
-//     if (additionalText.style.display === "none") {
-//         additionalText.style.display = "inline";
-//         btnExpandText.style.display = "none"; // "display" en lugar de "add.display"
-//     } else {
-//         additionalText.style.display = "none";
-//     }
-// }
-/*
-<button class="btn btn-primary" id="btnExpandText" onclick="expandText()">Ver más</button>
-                                <span id="additionalText" style="display: none;">
-                                    
-                                </span>*/

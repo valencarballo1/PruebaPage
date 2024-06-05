@@ -26,99 +26,72 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <a href="/" class="navbar-brand m-auto">
+        <a href="./AbbalColor.html" class="navbar-brand m-auto">
             <img class="logo" src="./Assets/Logoabbal.png" alt="Logo Abbal" height="70px">
         </a>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto"> <!-- Utilizamos mx-auto para centrar los elementos -->
-                <!-- <li class="nav-item active"><a class="nav-link" href="#">Inicio</a></li> -->
-                <li class="nav-item"><a class="nav-link" href="#nuestrosTrabajos">Nuestros Trabajos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#sobreNosotros">Sobre Nosotros</a></li>
-                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contacto">Contactanos</a></li>
+            <ul class="navbar-nav mx-auto"> 
+                <li class="nav-item"><a class="nav-link" href="./NuestrosTrabajos.html">Nuestros Trabajos</a></li>
+                <li class="nav-item"><a class="nav-link" href="./SobreNosotros.html">Sobre Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="./Contacto.html">Contactanos</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="container-fluid" id="nuestrosTrabajos">
-        <div class="col-md-12 col-sm-12">
+    <div class="landing-page">
+    </div>
+
+    <div class="card container-fluid" id="nuestrosTrabajos">
+        <div class="card-title">
             <h1 class="text-center titulo-contenido">Nuestros Trabajos</h1>
         </div>
-        <div class="row d-flex">
-
-            <div class="col-xl-12">
+        <div class="card-body row">
+            <div class="col-md-6 col-6 row d-flex align-items-center">
+                <p class="card-text text-center col-12">
+                    Descubre más de nuestros proyectos detallados
+                    <br> explorando nuestra galería completa.
+                </p>
+                <p class="card-text text-center col-12">
+                    Explora
+                    <a href="./NuestrosTrabajos.html" type="button">
+                        <img width="35" height="35" src="https://img.icons8.com/ios/50/000000/circled-chevron-right--v1.png"
+                            style="color: #266371;"
+                            alt="circled-chevron-right--v1" />
+                    </a>
+                </p>
+            </div>
+            <div class="col-xl-6 col-6">
                 <div class="images">
                     <div class="swiper mySwiper">
-
                         <div class="swiper-wrapper">
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide slide-carousel">
                                 <img src="./Assets/EmbajadaFrancia.jpg" alt="">
-                                <h3>Embajada francia</h3>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide slide-carousel">
                                 <img src="./Assets/EdificioHarrods.jpg" alt="">
-                                <h3>Edificio Harrods</h3>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide slide-carousel">
                                 <img src="./Assets/centro-naval.jpg" alt="">
-                                <h3>centro naval</h3>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide slide-carousel">
                                 <img src="./Assets/catedral-lomas.jpg" alt="">
-                                <h3>catedral lomas de zamora</h3>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide slide-carousel">
                                 <img src="./Assets/catedral-buenosAires.jpg" alt="">
-                                <h3>Catedral Buenos Aires</h3>
                             </div>
                         </div>
-                        <div class="rows">
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="container-fluid pt-5" id="sobreNosotros">
-        <div class="col-sm-12">
-            <h1 class="text-center titulo-contenido">Sobre nosotros</h1>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <div class="row align-items-center">
-                    <div class="col-md-12 col-sm-12 col-xl-5">
-                        <img src="./Assets/interior pintureria.jpg" alt="Logo de la empresa" class="img-fluid">
-                    </div>
-
-                    <!-- Columna para el texto informativo -->
-                    <div class="col-md-12 col-xl-7">
-                        <h4 class="card-title text-center">Abbal <i class="fa-solid fa-plane-up"></i> Color SRL</h4>
-                        <p class="card-text text-center">
-                            ABAL GALILEO SRL desarrolla obras de acuerdo a los principios que la rigen desde su
-                            nacimiento: Plazo
-                            pactado, Calidad requerida y Precio estipulado.
-                            La Empresa cuenta con un equipo de profesionales altamente capacitados que brindan a
-                            nuestros clientes
-                            todo lo necesario para satisfacer sus exigencias y llegar al objetivo final: entregar la
-                            obra terminada según
-                            las pautas establecidas.
-                            Nuestro personal tiene un alto nivel de capacitación y profesionalismo.
-                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <div class="container-fluid pt-5" id="servicios">
         <div class="row justify-content-center">
@@ -198,48 +171,39 @@
         </div>
     </div>
 
-    <div class="container pt-5" id="contacto">
-        <h1 class="text-center titulo-contenido">Contactanos</h1>
-        <div class="card">
-            <div class="card-body">
-                <!-- Formulario dentro de la card -->
-                <form>
-                    <div class="form-group">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" class="form-control rounded-input" id="nombre"
-                            placeholder="Ingresa tu nombre y apellido">
-                    </div>
-
-                    <!-- Nombre -->
-                    <div class="form-group">
-                        <label for="nombre">Email:</label>
-                        <input type="email" class="form-control rounded-input" id="email"
-                            placeholder="Ingresa tu email">
-                    </div>
-
-                    <!-- Título -->
-                    <div class="form-group">
-                        <label for="titulo">Título:</label>
-                        <input type="text" class="form-control rounded-input" id="titulo"
-                            placeholder="Ingresa el título">
-                    </div>
-
-                    <!-- Cuerpo de texto -->
-                    <div class="form-group">
-                        <label for="cuerpo">Puedes ingresar una consulta o pedir una cotizacion:</label>
-                        <textarea class="form-control rounded-input" id="cuerpo" rows="3"
-                            placeholder="Ingresa tu consulta"></textarea>
-                    </div>
-
-                    <!-- Botón de enviar -->
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+    <div class="card container-fluid">
+        <div class="card-title">
+            <h1 class="text-center titulo-contenido">Nosotros</h1>
+        </div>
+        <div class="card-body row">
+            <div class="col-xl-6 col-6">
+                <img src="./Assets/interior pintureria.jpg" alt="Logo de la empresa" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-6 row d-flex align-items-center">
+                <p class="card-text text-center col-12">
+                    Nuestro objetivo es siempre dar las mejores soluciones de
+                    <br>diseño, técnicas, económicas y constructivas para cada cliente.
+                </p>
+                <p class="card-text text-center col-12">
+                    Saber mas
+                    <a href="./SobreNosotros.html" type="button">
+                        <img width="35" height="35" src="https://img.icons8.com/ios/50/000000/circled-chevron-right--v1.png"
+                            style="color: #266371;"
+                            alt="circled-chevron-right--v1" />
+                    </a>
+                </p>
             </div>
         </div>
     </div>
 
+    
+
     <footer class="footer">
-        <hr />
+        <div class="col-12 text-center px-0 d-flex justify-content-center">
+            CABA
+            <br class="d-block">
+            RIO CUARTO 1493
+        </div>
         <div class="col-12 px-0 d-flex justify-content-center">
             2024 ABBAL COLOR SRL |
             <br class="d-block d-md-none">
@@ -255,32 +219,6 @@
     </footer>
 
     <!--MODALS-->
-
-    <!-- Agrega esto al final de tu HTML, justo antes de cerrar el body -->
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title" id="modalTitle">Título del Trabajo</h4>
-                </div>
-
-                <!-- Modal Body -->
-                <div class="modal-body">
-                    <img id="modalImage" src="" alt="Trabajo realizado">
-                    <p id="modalDescription">Descripción del trabajo realizado.</p>
-                </div>
-
-                <!-- Modal Footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
