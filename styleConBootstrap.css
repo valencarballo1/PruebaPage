@@ -16,6 +16,14 @@ body {
     font-family: 'Roboto light', Helvetica, Arial, Lucida, sans-serif;
 }
 
+.modal-body{
+    background-color: #e0e0e0;
+}
+
+.modal-header{
+    background-color: #e0e0e0;
+}
+
 
 .logo-empresa{
     text-transform: uppercase;
@@ -44,8 +52,11 @@ body {
 }
 
 .logo {
-    background-color: transparent;
+    /* background-color: transparent; */
     border-radius: 50%;
+    filter: drop-shadow(
+        0 0 10px rgba(0, 0, 0, .8)
+    )
 }
 
 .navbar ul li a {
